@@ -64,12 +64,20 @@ body{
 .banner img{
     width: 556px;
     height: 438px;
+    transition: 2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: .5s;
+} 
+.banner img:hover{
+    transform: scale(.5) rotate(-380deg);
 }
+
 .banner-text h1{
     font-size: 64px;
     font-weight: 700;
     color: #FFFFFF;
 }
+
 .watch-button{
     display: flex;
     align-items: center;
@@ -78,6 +86,13 @@ body{
     color: #FFFFFF;
     height: 44px;
     width: 168px;
+    transition-property: width;
+    transition-duration: 2s;
+    transition-delay: .5s;
+}
+.watch-button:hover{
+    width: 268px;
+    background-color: #56a025;
 }
 .watch-button .arrow{
     padding-left: 8px;
@@ -153,6 +168,34 @@ main{
     font-weight: 400;
     color: #6C6C6C;
 }
+/* .................matches highlights................  */
+.copa-amrerica{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+}
+.container h1{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+.matches-highlight{
+    width: 330px;
+    height: 450px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    box-shadow: 5px 5px 20px 5px  gray;
+
+}
+.video{
+    width: 300px;
+    height: 256px;
+}
 /* .........footer section styles below.........  */
 .footer-part{
     margin-top: 150px;
@@ -195,4 +238,18 @@ main{
    font-size: 18px;
    font-weight: 500;
    color: #000000;
+}
+/* ...........media query..........  */
+/* ..........for mobile devices...........  */
+@media olny screen and (ma-width:688px) {
+    .container{
+        width: 100%
+    }
+    .banner{
+        display: grid; 
+        grid-template-columns: repeat(1, 1fr);
+        align-items: flex-start;
+        background-color: #E02C6D; 
+        
+    }
 }
