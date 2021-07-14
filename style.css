@@ -24,7 +24,7 @@ body{
 }
 /* ..........navbar.........  */
 .navbar ul{
-    list-style: none;
+     list-style: none;
     display: flex;
     align-items: center;
     padding: 0px;
@@ -41,7 +41,7 @@ body{
     line-height: 24px;
 }
 /* .......logo........  */
-.logo{
+ .logo{
     display: flex;
     align-items: center;
     padding: 10px 24px;
@@ -50,7 +50,7 @@ body{
 .logo img{
     width: 24px;
     height: 24px;
-}
+} 
 /* .........banner part style........  */
 .banner{
     display: grid;
@@ -175,7 +175,7 @@ main{
     align-items: center;
     justify-content: center;
 }
-.container h1{
+.container #align-center{
     text-align: center;
     font-size: 48px;
     font-weight: 700;
@@ -226,7 +226,7 @@ main{
 }
 .social-icon ul li a{
     text-decoration: none;
-   font-size: 17px;
+   font-size: 28px;
    text-align: center;
    font-weight: 700;
    color: #18191F;
@@ -241,15 +241,95 @@ main{
 }
 /* ...........media query..........  */
 /* ..........for mobile devices...........  */
-@media olny screen and (ma-width:688px) {
+@media only screen and (max-width:688px) {
     .container{
-        width: 100%
+        width: 90%;
+        margin: auto;
+        justify-content: center;
+    }
+    .all-highlight img{
+        width: 400px;
+        height: 300px;
+    }
+    .header-part, .navbar, .logo{
+        display: none;
+    }
+
+    .banner,
+    .players,
+    .all-highlight,
+    .copa-amrerica{
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-content: center;
+    }
+    .players,
+    .all-highlight,
+    .copa-amrerica{
+       width: 60%;
+       margin-top: 0px;
+       margin-left: 15px;
+       margin-right: 0px;
+       padding-left: 10px;
     }
     .banner{
-        display: grid; 
-        grid-template-columns: repeat(1, 1fr);
-        align-items: flex-start;
-        background-color: #E02C6D; 
-        
+        width: 50%;
+        padding-top: 0;
+        margin-left: 10;
+        margin-right: 15;
     }
+
+.banner-text h1 {
+  font-size: 36px;
+  line-height: 50px;
+}
+.banner img{
+    width: 300px;
+    margin-top: 30px;
+    margin-right: 50px;
+} 
+.players {
+    margin-bottom: 36px;
+  }
+  .highlight-text h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .all-highlight img{
+   margin-top: 30px;
+}
+.matches-highlight{
+    margin-top: 30px;
+}
+footer {
+    margin-top: 45px;
+    margin-bottom: 90px;
+  }
+  .logo {
+    width: 275px;
+    height: 63px;
+    padding-bottom: 20px;
+  }
+  .container #align-center{
+    text-align: left;
+    font-size: 28px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+.highlight-text{
+    margin-left: 25px;
+    width: 329px;
+    background-color: #E7E5E5;
+    box-shadow: 5px 5px 20px 0px gray;
+}
+.highlight-text h1{
+    font-size: 28px;
+    font-weight: 500;
+    color: #0A0826;
+    line-height: 40px;
+   
+}
+
 }
