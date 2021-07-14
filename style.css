@@ -1,0 +1,198 @@
+/* ........common styles and utilities.......  */
+*{
+    box-sizing: border-box;
+} 
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #e7e5e5
+    
+}
+/* ...........fonts..........  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,400&display=swap');
+/* .......top banner styles below.......  */
+.top-banner{
+    background-color: #2D25A0;
+    background-repeat: no-repeat; 
+}
+.header-part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 156px;
+    padding-right: 123px;
+}
+/* ..........navbar.........  */
+.navbar ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+}
+.navbar ul li{
+    padding-right: 36px;
+    
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+/* .......logo........  */
+.logo{
+    display: flex;
+    align-items: center;
+    padding: 10px 24px;
+    background-color: #E02C6D;
+}
+.logo img{
+    width: 24px;
+    height: 24px;
+}
+/* .........banner part style........  */
+.banner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    padding-top: 67px;
+    padding-bottom: 86px;
+    
+}
+.banner img{
+    width: 556px;
+    height: 438px;
+}
+.banner-text h1{
+    font-size: 64px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.watch-button{
+    display: flex;
+    align-items: center;
+    padding: 10px 24px;
+    background-color: #E02C6D;
+    color: #FFFFFF;
+    height: 44px;
+    width: 168px;
+}
+.watch-button .arrow{
+    padding-left: 8px;
+}
+/* ..........players css styles below......... */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    width: 1080px;
+    margin: auto;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 27px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+
+}
+.player{
+    width: 330px;
+    height: 450px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    box-shadow: 5px 5px 20px 5px  gray;
+    
+    
+}
+.player-thumbnail img{
+    width: 300px;
+    height: 256px;
+}
+.player-detail h3{
+    color: #18191F;
+    font-size: 28px;
+    font-weight: 900;
+}
+.player-detail p{
+    color: #6C6C6C;
+    font-size: 16px;
+    font-weight: 400;
+}
+/* ......... highlight session styles.........  */
+.all-highlight{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+.all-highlight img{
+    width: 567px;
+    height: 427px;
+}
+.highlight-text{
+    width: 469px;
+    background-color: #E7E5E5;
+    box-shadow: 5px 5px 20px 0px gray;
+}
+.highlight-text h1{
+    font-size: 48px;
+    font-weight: 700;
+    color: #0A0826;
+    line-height: 60px;
+   
+}
+.highlight-text p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #6C6C6C;
+}
+/* .........footer section styles below.........  */
+.footer-part{
+    margin-top: 150px;
+    margin-bottom: 75px;
+    width: 484px;
+    height: 213px;
+}
+.football-image img{
+    height: 67px;
+    width: 484px;
+    display: block;
+}
+.social-icon ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+
+
+}
+.social-icon ul li{
+    list-style: none;
+    padding: 14px;
+    align-items: center;
+    margin-left: 0;
+
+}
+.social-icon ul li a{
+    text-decoration: none;
+   font-size: 17px;
+   text-align: center;
+   font-weight: 700;
+   color: #18191F;
+   
+}
+.footer{
+   display: block;
+   text-align: center;
+   font-size: 18px;
+   font-weight: 500;
+   color: #000000;
+}
